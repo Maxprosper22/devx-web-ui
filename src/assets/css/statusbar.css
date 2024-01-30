@@ -1,0 +1,70 @@
+.statusBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 4em; */
+    position: fixed;
+    top: 0;
+    /* padding: 0 2%; */
+    z-index: 1;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, .05);
+}
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3em;
+    padding: 0 2%;
+    /* background-color: white; */
+}
+.topBarLight {
+    background-color: var(--navBgLight);
+}
+.topBarDark {
+    background-color: var(--navBgDark);
+}
+.topBarLeft {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.topBarLeftLight {
+    color: var(--fontDark);
+}
+.topBarLeftDark {
+    color: var(--fontLight);
+}
+.topBarRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* width: 30%; */
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.topBarItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    /* border: 1px solid black; */
+}
+.topBarItem:active {
+    background-color: rgba(0, 128, 128, .2);
+}
+.chatLink {}
+.menuLink {}
+.topBarIcon {
+    font-size: 25px;
+}
+.topBarIconLink {
+    color: var(--fontLink);
+}
+.topBarIconDark {
+    color: var(--fontLight);
+}

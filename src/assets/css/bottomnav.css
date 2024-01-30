@@ -1,0 +1,40 @@
+.bottomNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3em;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    /* z-index: 1; */
+}
+.bottomNavLight {
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, .1);
+    background-color: var(--navBgLight);
+}
+.bottomNavDark {
+    background-color: var(--navBgDark);
+}
+.tabLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    /* border: 1px solid black; */
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.tabLinks:active {
+    background-color: rgba(0, 128, 128, .2);
+}
+.tabIcon {
+    font-size: 25px;
+    color: var(--fontLight);
+}
+.tabIconLink {
+    color: var(--fontLink);
+}
+.tabIconDark {
+    color: var(--fontLight);
+}
