@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react'
 import { useOutletContext, Link, NavLink } from 'react-router-dom'
 import { IonIcon } from '@ionic/react';
-import { home, homeOutline, notifications, notificationsOutline, search, searchOutline, person, personOutline, compass, compassOutline, briefcaseOutline, briefcase, school, schoolOutline, personCircle, personCircleOutline, settingsOutline } from 'ionicons/icons'
+import { home, homeOutline, notifications, notificationsOutline, search, searchOutline, person, personOutline, compass, compassOutline, briefcaseOutline, briefcase, locate, locateOutline, school, schoolOutline, personCircle, personCircleOutline, settings, settingsOutline } from 'ionicons/icons'
 
 import '../assets/css/bottomnav.css'
 
@@ -18,13 +18,13 @@ function BottomNav() {
                 {({isActive, isPending})=> (<IonIcon icon={isActive ? home : homeOutline} className={pageCtx.theme == 'light' ? 'tabIcon tabIconLink' : 'tabIcon tabIconDark'}></IonIcon>)}
             </NavLink>
             <NavLink to='/locate' className="tabLinks" >
-                {({isActive, isPending})=> (<IonIcon icon={isActive ? school : schoolOutline} className={pageCtx.theme == 'light' ? 'tabIcon tabIconLink' : 'tabIcon tabIconDark'}></IonIcon>)}
+                {({isActive, isPending})=> (<IonIcon icon={isActive ? locate : locateOutline} className={pageCtx.theme == 'light' ? 'tabIcon tabIconLink' : 'tabIcon tabIconDark'}></IonIcon>)}
             </NavLink>
             <NavLink to='/profile' className="tabLinks" >
-                {({isActive, isPending})=> (<IonIcon icon={isActive ? compass : compassOutline} className={pageCtx.theme == 'light' ? 'tabIcon tabIconLink' : 'tabIcon tabIconDark'}></IonIcon>)}
+                {({isActive, isPending})=> (<IonIcon icon={isActive ? person :personOutline} className={pageCtx.theme == 'light' ? 'tabIcon tabIconLink' : 'tabIcon tabIconDark'}></IonIcon>)}
             </NavLink>
             <NavLink to='/settings' className="tabLinks" >
-               {({isActive, isPending})=> (<IonIcon icon={isActive ? personCircle : personCircleOutline} className={pageCtx.theme == 'light' ? "tabIcon tabIconLink" : "tabIcon tabIconDark"}></IonIcon>)}
+               {({isActive, isPending})=> (<IonIcon icon={isActive ? settings : settingsOutline} className={pageCtx.theme == 'light' ? "tabIcon tabIconLink" : "tabIcon tabIconDark"}></IonIcon>)}
             </NavLink>
         </div>
     )
