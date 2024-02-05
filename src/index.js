@@ -7,6 +7,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import Home, { postsLoader, postsAction } from './pages/Home'
+import Locate from './pages/Locate'
+import Profile from './pages/Profile'
+import Settings from './pages/Settings'
 
 const router = createBrowserRouter([
     {
@@ -19,6 +22,15 @@ const router = createBrowserRouter([
                 // path: "/",
                 index: true,
                 element: <Home />,
+            },{
+                path: "locate",
+                element: <Locate />
+            },{
+                path: "profile",
+                element: <Profile />
+            },{
+                path: "settings",
+                element: <Settings />
             }
         ]
     }

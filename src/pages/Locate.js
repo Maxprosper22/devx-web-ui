@@ -1,15 +1,11 @@
 import StatusBar from '../components/StatusBar'
 import BottomNav from '../components/BottomNav'
 
-import '../assets/css'
-
-export default function Profile() {
+export default function Locate() {
     return (
         <div className="base">
             {/*<StatusBar title="NoobEx" />*/}
-            <div className="base-cover">
-                
-            </div>
+            <div className="base-cover"></div>
             <BottomNav />
         </div>
     )
