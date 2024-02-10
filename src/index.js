@@ -10,6 +10,8 @@ import Home, { postsLoader, postsAction } from './pages/Home'
 import Locate from './pages/Locate'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
+import Signin from './pages/Signin'
+import Signup from './pages/Signup'
 
 const router = createBrowserRouter([
     {
@@ -31,6 +33,12 @@ const router = createBrowserRouter([
             },{
                 path: "settings",
                 element: <Settings />
+            },{
+                path: "signin",
+                element: <Signin />
+            },{
+                path: "signup",
+                element: <Signup />
             }
         ]
     }

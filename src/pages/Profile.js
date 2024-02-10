@@ -1,7 +1,7 @@
 import StatusBar from '../components/StatusBar'
 import BottomNav from '../components/BottomNav'
 
-import '../assets/css'
+import '../assets/css/profile.css'
 
 export default function Profile() {
     return (
